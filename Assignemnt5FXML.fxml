@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Assignment5Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <GridPane alignment="CENTER" prefHeight="700.0" prefWidth="739.0" stylesheets="@../application.css">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints maxWidth="126.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints maxWidth="126.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints maxWidth="126.0" minWidth="10.0" prefWidth="98.5" />
+            <ColumnConstraints maxWidth="120.5" minWidth="10.0" prefWidth="110.0" />
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="1.0" minHeight="1.0" prefHeight="1.0" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Label GridPane.columnIndex="4" GridPane.rowIndex="18" />
+            <Label text="Choose Pizza Size:" textAlignment="CENTER" textFill="RED" underline="true" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+            <Line endX="-0.5" startX="-100.0" stroke="RED" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Line endX="-2.0" startX="-100.0" stroke="RED" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+            <CheckBox fx:id="chkVegitarian" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Vegetarian" GridPane.columnIndex="5" GridPane.rowIndex="19">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" text="Cheese Amount:" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+            <Label text="Toppings:" underline="true" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+            <CheckBox fx:id="chkHam" mnemonicParsing="false" text="Ham" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+            <CheckBox fx:id="chkPineapple" mnemonicParsing="false" text="Pineapple" GridPane.columnIndex="7" GridPane.rowIndex="15" />
+            <CheckBox fx:id="chkPepper" mnemonicParsing="false" text="Green Peppers" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+            <Line endX="9.5" startX="-100.0" stroke="#ff9900" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Line endX="7.7928924560546875" endY="0.2928932309150696" startX="-100.0" stroke="#ff8c00" GridPane.columnIndex="5" GridPane.rowIndex="17" />
+            <Line endX="-0.5" startX="-100.0" stroke="#3eff00" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Label fx:id="lblSize" contentDisplay="CENTER" style="-fx-border-color: Red;" text="Size" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+            <Label fx:id="lblCheese" style="-fx-border-color: orange;" text="Cheese" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+            <Button fx:id="btnSmall" mnemonicParsing="false" text="Small Pizza" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+            <Button fx:id="btnMedium" mnemonicParsing="false" text="Medium Pizza" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+            <Button fx:id="btnLarge" mnemonicParsing="false" text="Large Pizza" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+            <Button fx:id="btnSingle" mnemonicParsing="false" text="Single Cheese" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+            <Button fx:id="btnDouble" mnemonicParsing="false" text="Double Cheese" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+            <Button fx:id="btnTriple" mnemonicParsing="false" text="Triple Cheese" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+            <Label text="Your Pizza --&gt;" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+            <ImageView fitHeight="113.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../../OneDrive/Desktop/pizza.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../../OneDrive/Desktop/Cheese.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../../OneDrive/Desktop/Toopings.png" />
+               </image>
+            </ImageView>
+            <Label text="Ham:" GridPane.columnIndex="7" GridPane.rowIndex="17" />
+            <Label fx:id="lblHam" text="None" GridPane.columnIndex="8" GridPane.rowIndex="17" />
+            <Label text="Green Peppers:" GridPane.columnIndex="7" GridPane.rowIndex="18" />
+            <Label text="Pineapple:" GridPane.columnIndex="7" GridPane.rowIndex="19" />
+            <Label fx:id="lblPeppers" text="None" GridPane.columnIndex="8" GridPane.rowIndex="18" />
+            <Label fx:id="lblPineapple" text="None" GridPane.columnIndex="8" GridPane.rowIndex="19" />
+            <Label fx:id="lblCost" text="\$$$" textFill="#0015ff" GridPane.columnIndex="3" GridPane.rowIndex="21">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnGetCost" mnemonicParsing="false" text="Get Cost" textFill="#081bf2" GridPane.columnIndex="2" GridPane.rowIndex="21">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Line endX="1498.5858154296875" endY="-0.6284353733062744" startX="802.2929077148438" startY="0.08578646183013916" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+            <Label text="Number of Pizzas" textFill="#1716db" GridPane.columnIndex="2" GridPane.rowIndex="23" />
+            <TextField fx:id="txtText1" text="1" GridPane.columnIndex="3" GridPane.rowIndex="23" />
+            <Button fx:id="btnSave" mnemonicParsing="false" prefHeight="80.0" prefWidth="146.0" text="Save Pizza" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="24" GridPane.rowSpan="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.9976190476190476" endY="1.0" startX="1.0" startY="0.45952380952380956">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <TextArea fx:id="txtOutput" prefHeight="189.0" prefWidth="353.0" GridPane.columnIndex="5" GridPane.columnSpan="4" GridPane.rowIndex="22" GridPane.rowSpan="3" />
+            <Label text="Pizza Ordering System" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowSpan="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Line endX="607.7929077148438" endY="-0.20710676908493042" startX="-100.0" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

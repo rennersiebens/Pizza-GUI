@@ -1,0 +1,19 @@
+.root {
+	-fx-vgap: 10px;
+	-fx-hgap: 10px;
+	-fx-grid-lines-visible: false;
+	-fx-padding: 30px;
+	-fx-alignment: center;
+}
+.button {
+	-fx-font-family: "Consolas";
+	-fx-font-size: 24px;
+}
+.label {
+	-fx-font-family: "Consolas";
+	-fx-font-size: 24px;
+}
+
+.lblCost {
+	-fx-font-size: 35px;
+}
